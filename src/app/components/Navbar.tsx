@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { Moon, Sun } from "lucide-react";
+import { link } from "fs";
 
 const navItems = [
   { label: "Home", href: "#home" },
-  { label: "Projects", href: "#projects" },
+  { label: "Projects", href: "http://localhost:3000/projects", link:"http://localhost:3000/projects" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
