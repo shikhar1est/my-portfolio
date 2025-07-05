@@ -48,7 +48,7 @@ export default function QuickFacts() {
                   <h3 className="text-lg font-semibold text-white dark:text-gray-900">
                     {fact.title}
                   </h3>
-                  <p className="text-sm text-gray-300 dark:text-gray-700">
+                  <p className="text-sm text-white dark:text-gray-900">
                     {fact.description}
                   </p>
                 </CardContent>

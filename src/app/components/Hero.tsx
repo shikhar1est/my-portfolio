@@ -16,7 +16,7 @@ const Hero = () => {
       >
         Hey, I am <span className="text-rose-500">Shikhar</span>
         <br />
-        <span className="text-xl sm:text-2xl font-medium text-gray-600 dark:text-gray-300 mt-4 block">
+        <span className="text-xl sm:text-2xl font-medium text-gray-900 dark:text-gray-300 mt-4 block">
           I turn ideas into <span className="underline decoration-rose-400">products</span> <br />
           and build stuff that actually works.
         </span>
@@ -26,7 +26,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="mt-6 max-w-2xl text-base sm:text-lg text-white-700 dark:text-gray-400"
+        className="mt-6 max-w-2xl text-base sm:text-lg text-gray-900 dark:text-gray-300"
       >
         Passionate about clean code, user-first design, and building scalable apps with modern web
         stacks like <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>TailwindCSS</strong>.

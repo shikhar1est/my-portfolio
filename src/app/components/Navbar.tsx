@@ -7,10 +7,10 @@ import { Moon, Sun } from "lucide-react";
 import { link } from "fs";
 
 const navItems = [
-  { label: "Home", href: "#home" },
+  { label: "Home", href: "http://localhost:3000",link:"http://localhost:3000" },
   { label: "Projects", href: "http://localhost:3000/projects", link:"http://localhost:3000/projects" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "http://localhost:3000/about", link:"http://localhost:3000/about" },
+  { label: "Contact", href: "http://localhost:3000/contact", link:"http://localhost:3000/contact" },
 ];
 
 const Navbar = () => {
@@ -73,12 +73,12 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="#home" className="text-2xl font-bold text-white">
-            Shikhar<span className="text-blue-500">.</span>
+          <Link href="http://localhost:3000" className="text-2xl font-bold text-gray-800 dark:text-white">
+            Shikhar<span className="text-blue-500 dark:text-blue-500">.</span>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex space-x-6 text-white font-medium items-center">
+          <div className="hidden md:flex space-x-6 text-gray-800 dark:text-white font-medium items-center">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -97,7 +97,7 @@ const Navbar = () => {
             <motion.button
               onClick={toggleDarkMode}
               whileTap={{ rotate: 360, scale: 0.9 }}
-              className="ml-4 p-1 text-white hover:text-yellow-400 transition"
+              className="ml-4 p-1 text-gray-800 dark:text-white hover:text-yellow-400 transition"
               aria-label="Toggle dark mode"
             >
               {darkMode ? <Sun size={22} /> : <Moon size={22} />}
