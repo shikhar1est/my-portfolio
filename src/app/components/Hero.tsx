@@ -45,13 +45,13 @@ const Hero = () => {
         className="mt-8 flex flex-col sm:flex-row gap-4"
       >
         <Link
-          href="#projects"
+          href="http://localhost:3000/projects"
           className="bg-rose-500 hover:bg-rose-600 text-white font-semibold py-2 px-6 rounded-full transition-all shadow-md"
         >
           View Projects
         </Link>
         <Link
-          href="#contact"
+          href="http://localhost:3000/contact"
           className="border border-rose-500 hover:bg-rose-100 dark:hover:bg-rose-900 text-rose-500 font-semibold py-2 px-6 rounded-full transition-all shadow-md"
         >
           Get in Touch

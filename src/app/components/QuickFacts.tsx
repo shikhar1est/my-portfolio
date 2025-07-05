@@ -1,29 +1,50 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
 import { motion } from "framer-motion";
-import { Lightbulb, Code, Cpu, Users } from "lucide-react";
+import { BookOpen, Music, Zap, Rocket } from "lucide-react";
 
 const facts = [
   {
-    icon: <Lightbulb size={32} />,
-    title: "Creative Thinker",
-    description: "Love solving complex problems with simple and intuitive design.",
+    icon: <BookOpen size={32} />,
+    title: "Currently Learning",
+    description: (
+      <>
+        <p className="text-sm text-white dark:text-gray-900 mb-2">
+          Advanced TypeScript & Framer Motion.
+        </p>
+        <Progress value={70} className="h-2" />
+        <p className="text-xs text-gray-300 dark:text-gray-600 mt-1">70% complete</p>
+      </>
+    ),
   },
   {
-    icon: <Code size={32} />,
-    title: "Full Stack Dev",
-    description: "Next.js, TypeScript, Node.js — I build scalable web apps.",
+    icon: <Music size={32} />,
+    title: "Listening To",
+    description: (
+      <p className="text-sm text-white dark:text-gray-900">
+        Lo-fi hip hop & tech podcasts for focus and inspiration.
+      </p>
+    ),
   },
   {
-    icon: <Cpu size={32} />,
-    title: "Performance-Driven",
-    description: "Optimized for speed, SEO, and great user experience.",
+    icon: <Zap size={32} />,
+    title: "Current Activity",
+    description: (
+      <p className="text-sm text-white dark:text-gray-900">
+        Optimizing transitions and animations in Portfolio V2.
+      </p>
+    ),
   },
   {
-    icon: <Users size={32} />,
-    title: "Team Collaborator",
-    description: "Great communicator who thrives in fast-paced environments.",
+    icon: <Rocket size={32} />,
+    title: "Exploring",
+    description: (
+      <p className="text-sm text-white dark:text-gray-900">
+        Learning about AI-powered tools like Sora and generative media tech.
+      </p>
+    ),
   },
 ];
 
@@ -31,8 +52,8 @@ export default function QuickFacts() {
   return (
     <section className="py-16 px-4 sm:px-6">
       <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          What I Bring to the Table
+        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+          Live Snapshots
         </h2>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -48,9 +69,7 @@ export default function QuickFacts() {
                   <h3 className="text-lg font-semibold text-white dark:text-gray-900">
                     {fact.title}
                   </h3>
-                  <p className="text-sm text-white dark:text-gray-900">
-                    {fact.description}
-                  </p>
+                  {fact.description}
                 </CardContent>
               </div>
             </motion.div>

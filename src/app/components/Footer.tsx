@@ -10,16 +10,16 @@ export default function Footer() {
         <p>&copy; {new Date().getFullYear()} Shikhar Rai. All rights reserved.</p>
 
         <div className="flex gap-6 mt-4 sm:mt-0 text-xl text-gray-700 dark:text-gray-300">
-          <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/shikhar1est" target="_blank" rel="noopener noreferrer">
             <FaGithub className="hover:text-rose-500 transition" />
           </a>
-          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">
+          <a href="www.linkedin.com/in/shikhar-rai-5667652a5" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="hover:text-rose-500 transition" />
           </a>
-          <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/Breaker5x" target="_blank" rel="noopener noreferrer">
             <FaTwitter className="hover:text-rose-500 transition" />
           </a>
-          <a href="https://instagram.com/yourinsta" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/kyayaarshikharr" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="hover:text-rose-500 transition" />
           </a>
         </div>

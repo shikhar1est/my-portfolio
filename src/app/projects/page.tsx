@@ -11,7 +11,10 @@ const projects = [
       "Built with Next.js, TypeScript, TailwindCSS, and Framer Motion. Responsive, fast, and elegant.",
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
     image: "/images/HALO.jpg",
-    link: "#",
+    links: [
+      { label: "Live", url: "https://your-live-link.com" },
+      { label: "GitHub", url: "https://github.com/your-repo" },
+    ],
   },
   {
     title: "E-Commerce Platform",
@@ -19,7 +22,9 @@ const projects = [
       "Full-stack e-commerce app with cart, payments, and admin dashboard using MERN stack.",
     tech: ["React", "Node.js", "MongoDB", "Express"],
     image: "/images/RDR2.jpg",
-    link: "#",
+    links: [
+      { label: "GitHub", url: "https://github.com/your-ecommerce-repo" },
+    ],
   },
   {
     title: "Blog CMS",
@@ -27,7 +32,10 @@ const projects = [
       "Markdown-based blog with content management using Sanity.io and Next.js.",
     tech: ["Next.js", "Sanity", "TailwindCSS"],
     image: "/images/MAXPAYNE.jpg",
-    link: "#",
+    links: [
+      { label: "Live", url: "https://your-blog-live.com" },
+      { label: "GitHub", url: "https://github.com/blog-repo" },
+    ],
   },
   {
     title: "Chat App",
@@ -35,7 +43,7 @@ const projects = [
       "Real-time chat app with WebSocket and Firebase integration. Smooth UI with auth and dark mode.",
     tech: ["React", "Firebase", "WebSocket"],
     image: "/images/WARHAMMER.jpg",
-    link: "#",
+    links: [],
   },
 ];
 
@@ -85,14 +93,19 @@ export default function ProjectsPage() {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 text-sm text-rose-500 dark:text-rose-400 hover:underline w-fit"
-                  >
-                    View Project →
-                  </a>
+                  <div className="flex flex-wrap gap-4 mt-2">
+                    {project.links?.map((link, idx) => (
+                      <a
+                        key={idx}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-rose-500 dark:text-rose-400 hover:underline"
+                      >
+                        {link.label} →
+                      </a>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>
