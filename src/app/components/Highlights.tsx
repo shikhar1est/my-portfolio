@@ -2,62 +2,66 @@
 
 import { motion } from "framer-motion";
 import { CardContent } from "@/components/ui/card";
-import { Lightbulb, Code } from "lucide-react";
-
-const cardVariants = {
-  hiddenLeft: { opacity: 0, x: -100 },
-  hiddenRight: { opacity: 0, x: 100 },
-  visible: { opacity: 1, x: 0 },
-};
+import { Progress } from "@/components/ui/progress";
+import { FaBolt, FaCode } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Highlights() {
   return (
     <section className="py-16 px-4 sm:px-6">
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Project Progress Block */}
         <motion.div
-          initial="hiddenLeft"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.6 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          variants={cardVariants}
-          whileHover={{ scale: 1.05, y: -5 }}
+          whileHover={{ scale: 1.03, boxShadow: "0 0 20px rgba(255, 0, 0, 0.3)" }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="h-full text-left rounded-xl backdrop-blur-md bg-black/30 dark:bg-white/60 border border-white/10 dark:border-black/10 shadow-md dark:shadow-xl transition-all"
         >
-          <div className="rounded-xl backdrop-blur-md bg-black/30 dark:bg-white/60 border border-white/10 dark:border-black/10 shadow-md dark:shadow-xl transition-colors">
-            <CardContent className="p-6">
-              <div className="flex items-center gap-3 mb-4 text-rose-500 dark:text-rose-600">
-                <Lightbulb size={24} />
-                <h3 className="text-xl font-semibold text-white dark:text-gray-800">
-                  Problem Solver
-                </h3>
-              </div>
-              <p className="text-sm text-gray-300 dark:text-gray-800">
-                I enjoy breaking down complex problems into simple, elegant solutions — whether it's an algorithm, layout, or architecture.
-              </p>
-            </CardContent>
-          </div>
+          <CardContent className="py-6 px-6 space-y-3">
+            <div className="flex items-center gap-2 text-rose-400 dark:text-rose-600 font-semibold">
+              <FaBolt size={18} />
+              <span>Now Building</span>
+            </div>
+            <h3 className="text-lg font-semibold text-white dark:text-gray-800">
+              Portfolio V2
+            </h3>
+            <p className="text-sm text-white dark:text-gray-900">
+              Next.js · TypeScript · Framer Motion
+            </p>
+            <Progress value={67} className="h-2 mt-3" />
+            <p className="text-sm text-white dark:text-gray-900">
+              <span className="font-medium">67% complete</span> — polishing animations.
+            </p>
+            <p className="text-xs text-white dark:text-gray-900">Updated just now</p>
+          </CardContent>
         </motion.div>
 
+        {/* LeetCode Stats Block */}
         <motion.div
-          initial="hiddenRight"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.6 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          variants={cardVariants}
-          whileHover={{ scale: 1.05, y: -5 }}
+          whileHover={{ scale: 1.03, boxShadow: "0 0 20px rgba(255, 0, 0, 0.3)" }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="h-full text-left rounded-xl backdrop-blur-md bg-black/30 dark:bg-white/60 border border-white/10 dark:border-black/10 shadow-md dark:shadow-xl transition-all"
         >
-          <div className="rounded-xl backdrop-blur-md bg-black/30 dark:bg-white/60 border border-white/10 dark:border-black/10 shadow-md dark:shadow-xl transition-colors">
-            <CardContent className="p-6">
-              <div className="flex items-center gap-3 mb-4 text-rose-500 dark:text-rose-600">
-                <Code size={24} />
-                <h3 className="text-xl font-semibold text-white dark:text-gray-800">
-                  Code That Lasts
-                </h3>
-              </div>
-              <p className="text-sm text-gray-300 dark:text-gray-800">
-                I write scalable, maintainable, and performant code with a focus on long-term usability and developer experience.
-              </p>
-            </CardContent>
-          </div>
+          <CardContent className="py-6 px-6 space-y-3">
+            <div className="flex items-center gap-2 text-rose-400 dark:text-rose-600 font-semibold">
+              <FaCode size={18} />
+              <span>LeetCode Stats</span>
+            </div>
+            <p className="text-sm text-gray-300 dark:text-gray-700">
+              <strong>Total Solved:</strong> <span className="text-white dark:text-black font-semibold">221</span><br />
+              <strong>Easy:</strong> <span className="text-green-400 font-semibold">107</span> ·
+              <strong> Medium:</strong> <span className="text-yellow-400 font-semibold">97</span> ·
+              <strong> Hard:</strong> <span className="text-red-400 font-semibold">17</span><br />
+              <strong>Ranking:</strong> <span className="font-semibold text-white dark:text-black">557025</span>
+            </p>
+            <Link
+              href="https://leetcode.com/shikhar_est"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-rose-400 hover:underline"
+            >
+              View Profile ↗
+            </Link>
+          </CardContent>
         </motion.div>
       </div>
     </section>

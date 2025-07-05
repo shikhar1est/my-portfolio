@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./components/Navbar";
 import CanvasBackground from "./components/CanvasBackground"; // <-- add this import
 import type { Metadata } from "next";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         {/* Content on top */}
         <Navbar />
         <main className="pt-12 relative z-10">{children}</main>
+        <Footer/>
       </body>
     </html>
   );

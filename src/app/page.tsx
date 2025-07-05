@@ -4,6 +4,7 @@ import NowSection from "./components/NowSection";
 import QuickFacts from "./components/QuickFacts";
 import TechStack from "./components/TechStack";
 import Highlights from "./components/Highlights";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -14,11 +15,6 @@ export default function Home() {
       <TechStack/>
       <Highlights/>
       {/* FOOTER */}
-      <footer className="py-8 flex flex-wrap justify-center gap-6 border-t border-black/10 dark:border-white/10 text-sm text-gray-600 dark:text-gray-400">
-        <a href="https://nextjs.org/learn" target="_blank" className="hover:underline">Learn</a>
-        <a href="https://vercel.com/templates" target="_blank" className="hover:underline">Examples</a>
-        <a href="https://nextjs.org" target="_blank" className="hover:underline">Go to nextjs.org →</a>
-      </footer>
     </div>
   );
 }

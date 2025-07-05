@@ -2,12 +2,15 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col items-center justify-center px-6 sm:px-20 text-center">
+      className="min-h-screen flex flex-col items-center justify-center px-6 sm:px-20 text-center"
+    >
+      {/* Main Heading */}
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -22,6 +25,7 @@ const Hero = () => {
         </span>
       </motion.h1>
 
+      {/* Subtext */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -33,6 +37,7 @@ const Hero = () => {
         I don’t just build apps — I build polished experiences.
       </motion.p>
 
+      {/* Buttons */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -52,6 +57,24 @@ const Hero = () => {
           Get in Touch
         </Link>
       </motion.div>
+
+      {/* See Highlights */}
+      <motion.div
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1 }}
+  className="mt-12"
+>
+  <button
+    onClick={() => {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    }}
+    className="group inline-flex items-center gap-2 text-rose-500 hover:text-rose-600 transition font-medium text-base sm:text-lg focus:outline-none"
+  >
+    See Highlights
+    <ChevronDown className="group-hover:translate-y-1 transition-transform" size={20} />
+  </button>
+</motion.div>
     </section>
   );
 };

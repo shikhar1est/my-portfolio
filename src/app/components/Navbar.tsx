@@ -1,48 +1,28 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { Moon, Sun } from "lucide-react";
-import { link } from "fs";
 
 const navItems = [
-  { label: "Home", href: "http://localhost:3000",link:"http://localhost:3000" },
-  { label: "Projects", href: "http://localhost:3000/projects", link:"http://localhost:3000/projects" },
-  { label: "About", href: "http://localhost:3000/about", link:"http://localhost:3000/about" },
-  { label: "Contact", href: "http://localhost:3000/contact", link:"http://localhost:3000/contact" },
+  { label: "Home", href: "/" },
+  { label: "Projects", href: "/projects" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: "-40% 0px -50% 0px",
-        threshold: 0.1,
-      }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-    return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
 
   useEffect(() => {
@@ -73,24 +53,24 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="http://localhost:3000" className="text-2xl font-bold text-gray-800 dark:text-white">
-            Shikhar<span className="text-blue-500 dark:text-blue-500">.</span>
+          <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white">
+            Shikhar<span className="text-rose-500">.</span>
           </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex space-x-6 text-gray-800 dark:text-white font-medium items-center">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className={`transition-colors duration-200 ${
-                  activeSection === item.href.slice(1)
-                    ? "text-blue-400 underline underline-offset-4"
-                    : "hover:text-blue-400"
+                  pathname === item.href
+                    ? "text-rose-500 underline underline-offset-4"
+                    : "hover:text-rose-500"
                 }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
 
             {/* Dark Mode Toggle */}
@@ -125,18 +105,18 @@ const Navbar = () => {
             className="fixed inset-0 z-40 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-8 text-white text-2xl font-semibold"
           >
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
                 className={`transition ${
-                  activeSection === item.href.slice(1)
-                    ? "text-blue-400 underline underline-offset-4"
-                    : "hover:text-blue-400"
+                  pathname === item.href
+                    ? "text-rose-500 underline underline-offset-4"
+                    : "hover:text-rose-500"
                 }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
 
             {/* Dark Mode Toggle (Mobile) */}

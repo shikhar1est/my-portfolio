@@ -63,6 +63,7 @@ module.exports = {
       },
       animation: {
         'soft-blink': 'soft-blink 5s ease-in-out infinite',
+        'pulse-slow': 'pulse 1.25s infinite',
       },
       keyframes: {
         'soft-blink': {
