@@ -145,7 +145,8 @@ export default function ContactPage() {
             </div>
 
             <blockquote className="mt-8 text-md italic text-gray-700 dark:text-gray-300">
-              "The best way to predict the future is to invent it." — <span className="font-semibold">Alan Kay</span>
+              &quot;The best way to predict the future is to invent it.&quot; —{" "}
+              <span className="font-semibold">Alan Kay</span>
             </blockquote>
           </div>
         </motion.div>

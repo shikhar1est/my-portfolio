@@ -13,6 +13,7 @@ export default function CanvasBackground() {
 
     const stars: { x: number; y: number; radius: number; speed: number }[] = [];
     const totalStars = 100;
+
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -44,7 +45,7 @@ export default function CanvasBackground() {
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = getStarColor();
-      for (let star of stars) {
+      for (const star of stars) {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fill();

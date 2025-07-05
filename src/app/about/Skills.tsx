@@ -107,7 +107,7 @@ export default function SkillsAndPhilosophy() {
             <span className="text-xl font-semibold">Philosophy</span>
           </div>
           <p className="text-lg italic text-gray-800 dark:text-gray-300">
-            “Elegance in code isn’t just about brevity — it’s about clarity,
+            “Elegance in code isn&apos;t just about brevity — it&apos;s about clarity,
             purpose, and empathy for the next developer.”
           </p>
         </motion.div>

@@ -56,7 +56,7 @@ export default function ProjectsPage() {
             Projects
           </h1>
           <p className="mt-3 text-base sm:text-lg text-gray-600 dark:text-gray-400">
-            A glimpse into some things I've built — clean code, functional design, and performance in mind.
+            A glimpse into some things I&apos;ve built — clean code, functional design, and performance in mind.
           </p>
         </div>
 
