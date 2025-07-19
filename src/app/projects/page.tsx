@@ -6,44 +6,26 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Coding Judege Backend",
     description:
-      "Built with Next.js, TypeScript, TailwindCSS, and Framer Motion. Responsive, fast, and elegant.",
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
-    image: "/images/HALO.jpg",
+      "Built a scalable Coding Judge backend with code execution, test evaluation, and plagiarism detection.",
+    tech: ["Node.js","MongoDB", "Docker"],
+    image: "/images/Trainology.png",
     links: [
-      { label: "Live", url: "https://your-live-link.com" },
-      { label: "GitHub", url: "https://github.com/your-repo" },
+      { label: "Live", url: "https://coding-judge-backend-9czr.onrender.com" },
+      { label: "GitHub", url: "https://github.com/shikhar1est/coding-judge" },
     ],
   },
   {
-    title: "E-Commerce Platform",
+    title: "Trainology",
     description:
-      "Full-stack e-commerce app with cart, payments, and admin dashboard using MERN stack.",
+      "Built an LMS platform using the MERN stack with course and user management.",
     tech: ["React", "Node.js", "MongoDB", "Express"],
-    image: "/images/RDR2.jpg",
+    image: "/images/v8jjwp1d0qoa1.png",
     links: [
-      { label: "GitHub", url: "https://github.com/your-ecommerce-repo" },
+      { label: "Live", url: "https://trainology-project.vercel.app/" },
+      { label: "GitHub", url: "https://github.com/shikhar1est/TrainologyProject" },
     ],
-  },
-  {
-    title: "Blog CMS",
-    description:
-      "Markdown-based blog with content management using Sanity.io and Next.js.",
-    tech: ["Next.js", "Sanity", "TailwindCSS"],
-    image: "/images/MAXPAYNE.jpg",
-    links: [
-      { label: "Live", url: "https://your-blog-live.com" },
-      { label: "GitHub", url: "https://github.com/blog-repo" },
-    ],
-  },
-  {
-    title: "Chat App",
-    description:
-      "Real-time chat app with WebSocket and Firebase integration. Smooth UI with auth and dark mode.",
-    tech: ["React", "Firebase", "WebSocket"],
-    image: "/images/WARHAMMER.jpg",
-    links: [],
   },
 ];
 

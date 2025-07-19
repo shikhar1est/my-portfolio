@@ -10,7 +10,6 @@ export default function Highlights() {
   return (
     <section className="py-16 px-4 sm:px-6">
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Project Progress Block */}
         <motion.div
           whileHover={{ scale: 1.03, boxShadow: "0 0 20px rgba(255, 0, 0, 0.3)" }}
           transition={{ type: "spring", stiffness: 300 }}
@@ -35,7 +34,6 @@ export default function Highlights() {
           </CardContent>
         </motion.div>
 
-        {/* LeetCode Stats Block */}
         <motion.div
           whileHover={{ scale: 1.03, boxShadow: "0 0 20px rgba(255, 0, 0, 0.3)" }}
           transition={{ type: "spring", stiffness: 300 }}

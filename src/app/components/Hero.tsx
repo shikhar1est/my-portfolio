@@ -33,7 +33,7 @@ const Hero = () => {
         className="mt-6 max-w-2xl text-base sm:text-lg text-gray-900 dark:text-gray-300"
       >
         Passionate about clean code, user-first design, and building scalable apps with modern web
-        stacks like <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>TailwindCSS</strong>.
+        stacks like <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>SpringBoot</strong>, and <strong>MERN</strong>.
         I don’t just build apps — I build polished experiences.
       </motion.p>
 
@@ -45,13 +45,13 @@ const Hero = () => {
         className="mt-8 flex flex-col sm:flex-row gap-4"
       >
         <Link
-          href="http://localhost:3000/projects"
+          href="/projects"
           className="bg-rose-500 hover:bg-rose-600 text-white font-semibold py-2 px-6 rounded-full transition-all shadow-md"
         >
           View Projects
         </Link>
         <Link
-          href="http://localhost:3000/contact"
+          href="/contact"
           className="border border-rose-500 hover:bg-rose-100 dark:hover:bg-rose-900 text-rose-500 font-semibold py-2 px-6 rounded-full transition-all shadow-md"
         >
           Get in Touch
