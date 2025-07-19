@@ -14,7 +14,7 @@ const facts = [
         <p className="text-sm text-white dark:text-gray-900 mb-2">
           Database Management Systems
         </p>
-        <Progress value={70} className="h-2" />
+        <Progress value={50} className="h-2" />
         <p className="text-xs text-gray-300 dark:text-gray-600 mt-1">50% complete</p>
       </>
     ),

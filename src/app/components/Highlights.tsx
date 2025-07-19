@@ -26,7 +26,7 @@ export default function Highlights() {
             <p className="text-sm text-white dark:text-gray-900">
               Spring Boot · Firebase · Next.js
             </p>
-            <Progress value={67} className="h-2 mt-3" />
+            <Progress value={20} className="h-2 mt-3" />
             <p className="text-sm text-white dark:text-gray-900">
               <span className="font-medium">20% complete</span>
             </p>

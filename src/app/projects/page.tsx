@@ -10,7 +10,7 @@ const projects = [
     description:
       "Built a scalable Coding Judge backend with code execution, test evaluation, and plagiarism detection.",
     tech: ["Node.js","MongoDB", "Docker"],
-    image: "/images/Trainology.png",
+    image: "/images/v8jjwp1d0qoa1.png",
     links: [
       { label: "Live", url: "https://coding-judge-backend-9czr.onrender.com" },
       { label: "GitHub", url: "https://github.com/shikhar1est/coding-judge" },
@@ -21,7 +21,7 @@ const projects = [
     description:
       "Built an LMS platform using the MERN stack with course and user management.",
     tech: ["React", "Node.js", "MongoDB", "Express"],
-    image: "/images/v8jjwp1d0qoa1.png",
+    image: "/images/Trainology.png",
     links: [
       { label: "Live", url: "https://trainology-project.vercel.app/" },
       { label: "GitHub", url: "https://github.com/shikhar1est/TrainologyProject" },
