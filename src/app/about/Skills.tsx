@@ -9,7 +9,6 @@ import {
   Palette,
   Cloud,
   Settings,
-  Boxes,
 } from "lucide-react";
 
 export default function SkillsAndPhilosophy() {

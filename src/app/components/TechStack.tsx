@@ -6,7 +6,6 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiReact,
-  SiFramer,
   SiGithub,
   SiSpring,
 } from "react-icons/si";
