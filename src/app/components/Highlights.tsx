@@ -21,14 +21,14 @@ export default function Highlights() {
               <span>Now Building</span>
             </div>
             <h3 className="text-lg font-semibold text-white dark:text-gray-800">
-              Portfolio V2
+              Whastapp Chatbot
             </h3>
             <p className="text-sm text-white dark:text-gray-900">
-              Next.js · TypeScript · Framer Motion
+              Spring Boot · Firebase · Next.js
             </p>
             <Progress value={67} className="h-2 mt-3" />
             <p className="text-sm text-white dark:text-gray-900">
-              <span className="font-medium">67% complete</span> — polishing animations.
+              <span className="font-medium">20% complete</span>
             </p>
             <p className="text-xs text-white dark:text-gray-900">Updated just now</p>
           </CardContent>

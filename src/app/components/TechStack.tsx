@@ -11,6 +11,7 @@ import {
   SiSpring,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
+import { FaRust } from "react-icons/fa6";
 import { CardContent } from "@/components/ui/card";
 
 const technologies = [
@@ -18,7 +19,7 @@ const technologies = [
   { name: "TypeScript", icon: SiTypescript },
   { name: "TailwindCSS", icon: SiTailwindcss },
   { name: "React", icon: SiReact },
-  { name: "Framer Motion", icon: SiFramer },
+  { name: "Rust", icon: FaRust },
   { name: "GitHub", icon: SiGithub },
   { name: "Spring Boot", icon: SiSpring },
   { name: "Java", icon: FaJava },

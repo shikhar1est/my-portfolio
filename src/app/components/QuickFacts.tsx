@@ -12,10 +12,10 @@ const facts = [
     description: (
       <>
         <p className="text-sm text-white dark:text-gray-900 mb-2">
-          Advanced TypeScript & Framer Motion.
+          Database Management Systems
         </p>
         <Progress value={70} className="h-2" />
-        <p className="text-xs text-gray-300 dark:text-gray-600 mt-1">70% complete</p>
+        <p className="text-xs text-gray-300 dark:text-gray-600 mt-1">50% complete</p>
       </>
     ),
   },
@@ -24,7 +24,7 @@ const facts = [
     title: "Listening To",
     description: (
       <p className="text-sm text-white dark:text-gray-900">
-        Lo-fi hip hop & tech podcasts for focus and inspiration.
+        Podcasts about Ancient Warfare
       </p>
     ),
   },
@@ -33,7 +33,7 @@ const facts = [
     title: "Current Activity",
     description: (
       <p className="text-sm text-white dark:text-gray-900">
-        Optimizing transitions and animations in Portfolio V2.
+        Practicing Data Structures & Algorithms in Java
       </p>
     ),
   },
@@ -42,7 +42,7 @@ const facts = [
     title: "Exploring",
     description: (
       <p className="text-sm text-white dark:text-gray-900">
-        Learning about AI-powered tools like Sora and generative media tech.
+        Diving into Rust.
       </p>
     ),
   },
