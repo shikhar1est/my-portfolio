@@ -38,16 +38,15 @@ export default function SkillsAndPhilosophy() {
         { label: "MongoDB", icon: Database },
         { label: "PostgreSQL", icon: Database },
         { label: "MySQL", icon: Database },
-        { label: "Sanity", icon: Boxes },
       ],
     },
     {
-      title: "Frameworks / Tools",
+      title: "Languages",
       skills: [
-        { label: "TypeScript", icon: Languages },
+        { label: "JavaScript", icon: Languages },
         { label: "Java", icon: Languages },
-        { label: "Git & GitHub", icon: Settings },
-        { label: "Postman", icon: Cloud },
+        { label: "Rust", icon: Settings },
+        { label: "C/C++", icon: Cloud },
       ],
     },
   ];
@@ -63,7 +62,7 @@ export default function SkillsAndPhilosophy() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-10">
-            💼 Skills & Tools
+            Skills & Tools
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {categories.map((category, i) => (

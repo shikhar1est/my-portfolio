@@ -63,7 +63,7 @@ export default function AboutPage() {
       {/* Fun Facts Section */}
       <div className="mt-20 max-w-[700px] w-full px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6 text-gray-900 dark:text-white">
-          🎯 Fun Facts
+           Fun Facts
         </h2>
         <p className="text-center text-gray-600 dark:text-gray-400 mb-10">
           A few quirks and hobbies that keep me ticking.
